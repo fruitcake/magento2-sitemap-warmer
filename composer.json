@@ -1,0 +1,56 @@
+{
+    "name": "fruitcake/magento2-sitemap-warmer",
+    "description": "Magento2 Sitemap Warmer",
+    "keywords": [
+        "magento",
+        "magento2",
+        "sitemap",
+        "cache warmer"
+    ],
+    "license": [
+        "MIT"
+    ],
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Fruitcake",
+            "email": "info@fruitcake.nl"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8",
+        "ext-json": "*",
+        "magento/framework": "*",
+        "magento/module-sitemap": "*",
+        "symfony/console": "^4|^5|^6"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.34"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Fruitcake\\SitemapWarmer\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "magento/composer-dependency-version-audit-plugin": true
+        }
+    }
+}
